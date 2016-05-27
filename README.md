@@ -13,6 +13,19 @@ The name of the game was Escape from the Funky Factory. It was a puzzle game.
 ![Screenshot](https://raw.githubusercontent.com/featherless/2003-EscapeFromTheFunkyFactory/master/gfx/credits.png)
 ![Screenshot](https://raw.githubusercontent.com/featherless/2003-EscapeFromTheFunkyFactory/master/gfx/credits2.png)
 
+## Levels
+
+![Screenshot](https://raw.githubusercontent.com/featherless/2003-EscapeFromTheFunkyFactory/master/gfx/level1.png)
+![Screenshot](https://raw.githubusercontent.com/featherless/2003-EscapeFromTheFunkyFactory/master/gfx/level2.png)
+![Screenshot](https://raw.githubusercontent.com/featherless/2003-EscapeFromTheFunkyFactory/master/gfx/level3.png)
+![Screenshot](https://raw.githubusercontent.com/featherless/2003-EscapeFromTheFunkyFactory/master/gfx/level20.png)
+
+## Editors
+
+I made a level editor and data viewer application for use by the team to create levels.
+
+![Screenshot](https://raw.githubusercontent.com/featherless/2003-EscapeFromTheFunkyFactory/master/gfx/viewer.png)
+
 ## Version history
 
     CURRENT VERSION: v1.0
