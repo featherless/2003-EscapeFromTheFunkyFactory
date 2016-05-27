@@ -7,6 +7,7 @@ to the event me and a group of other attendees created a group called The Develo
 
 The name of the game was Escape from the Funky Factory. It was a puzzle game.
 
+![Screenshot](https://raw.githubusercontent.com/featherless/2003-EscapeFromTheFunkyFactory/master/gfx/preview.gif)
 
 ![Screenshot](https://raw.githubusercontent.com/featherless/2003-EscapeFromTheFunkyFactory/master/gfx/intro.png)
 ![Screenshot](https://raw.githubusercontent.com/featherless/2003-EscapeFromTheFunkyFactory/master/gfx/credits.png)
