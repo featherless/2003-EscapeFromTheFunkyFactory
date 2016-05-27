@@ -1,0 +1,57 @@
+# Microsoft Developer Studio Generated Dependency File, included by FunkyFact.mak
+
+.\Characters.cpp : \
+	"..\..\..\..\mssdk\include\basetsd.h"\
+	"..\..\..\..\program files\microsoft visual studio\vc98\include\math.h"\
+	".\Characters.h"\
+	".\common.h"\
+	".\Levels.h"\
+	".\Objects.h"\
+	".\OpenGL.h"\
+	
+
+.\Levels.cpp : \
+	"..\..\..\..\mssdk\include\basetsd.h"\
+	"..\..\..\..\program files\microsoft visual studio\vc98\include\math.h"\
+	".\common.h"\
+	".\Levels.h"\
+	".\Objects.h"\
+	".\OpenGL.h"\
+	
+
+.\main.cpp : \
+	"..\..\..\..\mssdk\include\basetsd.h"\
+	"..\..\..\..\program files\microsoft visual studio\vc98\include\math.h"\
+	".\Characters.h"\
+	".\common.h"\
+	".\fps.h"\
+	".\Levels.h"\
+	".\Objects.h"\
+	".\obstacle.h"\
+	".\OpenGL.h"\
+	
+
+.\objects.cpp : \
+	"..\..\..\..\mssdk\include\basetsd.h"\
+	"..\..\..\..\program files\microsoft visual studio\vc98\include\math.h"\
+	".\common.h"\
+	".\Objects.h"\
+	".\OpenGL.h"\
+	
+
+.\obstacle.cpp : \
+	"..\..\..\..\mssdk\include\basetsd.h"\
+	"..\..\..\..\program files\microsoft visual studio\vc98\include\math.h"\
+	".\Characters.h"\
+	".\common.h"\
+	".\Levels.h"\
+	".\Objects.h"\
+	".\obstacle.h"\
+	".\OpenGL.h"\
+	
+
+.\OpenGL.cpp : \
+	"..\..\..\..\mssdk\include\basetsd.h"\
+	"..\..\..\..\program files\microsoft visual studio\vc98\include\math.h"\
+	".\OpenGL.h"\
+	

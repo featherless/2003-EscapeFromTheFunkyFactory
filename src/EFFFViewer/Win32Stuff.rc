@@ -1,0 +1,445 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ANALYZE DIALOG DISCARDABLE  0, 0, 309, 279
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_OBSTACLELIST,13,17,128,186,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Obstacles",IDC_STATIC,7,7,139,202
+    GROUPBOX        "Finalization Type",IDC_STATIC,157,7,145,24
+    LTEXT           "",IDC_FINALIZED,161,16,94,10,SS_SUNKEN
+    GROUPBOX        "Version",IDC_STATIC,157,32,145,24
+    LTEXT           "",IDC_VERSION,161,41,135,10,SS_SUNKEN
+    GROUPBOX        "Tile BMP",IDC_STATIC,157,57,145,27
+    GROUPBOX        "Object BMP",IDC_STATIC,157,85,145,28
+    GROUPBOX        "Sprite BMP",IDC_STATIC,157,115,145,29
+    GROUPBOX        "Number of Obstacles",IDC_STATIC,157,174,145,24
+    LTEXT           "",IDC_NUMOBSTACLES,161,183,135,10,SS_SUNKEN
+    GROUPBOX        "Next Level",IDC_STATIC,157,199,145,29
+    GROUPBOX        "Transition BMP",IDC_STATIC,157,146,145,27
+    PUSHBUTTON      "Obstacle Info",IDC_OBSTACLEINFO,17,212,50,14,
+                    WS_DISABLED
+    RADIOBUTTON     "Sorted",IDC_SORTED,88,221,37,10
+    RADIOBUTTON     "Unsorted",IDC_UNSORTED,88,233,45,10
+    GROUPBOX        "Sorting",IDC_STATIC,82,210,53,36
+    PUSHBUTTON      "",IDC_TILEBMP,161,66,94,14
+    PUSHBUTTON      "",IDC_OBJECTBMP,161,95,94,14
+    PUSHBUTTON      "",IDC_SPRITEBMP,161,126,95,14
+    PUSHBUTTON      "",IDC_TRANSITIONBMP,161,155,96,14
+    PUSHBUTTON      "",IDC_NEXTLEVEL,161,209,96,14
+    PUSHBUTTON      "Delete",IDC_DELETE,17,232,50,14,WS_DISABLED
+    PUSHBUTTON      "Add",IDC_ADD,17,251,50,14
+    PUSHBUTTON      "Change",IDC_CHANGEFINAL,260,14,36,13
+    PUSHBUTTON      "Change",IDC_CHANGETILE,260,66,35,13
+    PUSHBUTTON      "Change",IDC_CHANGEOBJ,260,95,35,13
+    PUSHBUTTON      "Change",IDC_CHANGESPRITE,261,126,34,13
+    PUSHBUTTON      "Change",IDC_CHANGETRANS,262,155,34,13
+    PUSHBUTTON      "Change",IDC_CHANGENEXT,261,210,35,13
+    GROUPBOX        "Timmy's Start Position",IDC_STATIC,181,231,90,33
+    LTEXT           "X",IDC_STATIC,203,253,8,8
+    LTEXT           "Y",IDC_STATIC,243,253,8,8
+    EDITTEXT        IDC_X,185,240,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_Y,225,240,40,12,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+IDD_DEFAULT DIALOG DISCARDABLE  0, 0, 214, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Default Obstacle"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "OK",IDC_OK,82,77,50,14
+    GROUPBOX        "Face",IDC_STATIC,7,32,90,27
+    GROUPBOX        "Direction",IDC_STATIC,117,7,90,25
+    GROUPBOX        "Position",IDC_STATIC,117,39,90,33
+    LTEXT           "X",IDC_STATIC,139,61,8,8
+    LTEXT           "Y",IDC_STATIC,179,61,8,8
+    LTEXT           "",IDC_ID,37,70,19,11,SS_SUNKEN
+    GROUPBOX        "ID #",IDC_STATIC,33,60,28,25
+    EDITTEXT        IDC_X,121,48,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_Y,161,48,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "State",IDC_STATIC,7,7,90,24
+    COMBOBOX        IDC_STATE,13,15,80,64,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_FACE,13,42,78,78,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_DIRECTION,121,16,80,78,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_LASER DIALOG DISCARDABLE  0, 0, 214, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Laser"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "OK",IDC_OK,82,77,50,14
+    GROUPBOX        "Laser Length (in # Tiles)",IDC_STATIC,117,7,90,25
+    LTEXT           "",IDC_ID,37,70,19,11,SS_SUNKEN
+    GROUPBOX        "ID #",IDC_STATIC,33,60,28,25
+    EDITTEXT        IDC_DIRECTION,121,17,80,12,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "Position",IDC_STATIC,117,39,90,33
+    LTEXT           "X",IDC_STATIC,139,61,8,8
+    LTEXT           "Y",IDC_STATIC,179,61,8,8
+    EDITTEXT        IDC_X,121,48,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Y,161,48,40,12,ES_AUTOHSCROLL
+    GROUPBOX        "State",IDC_STATIC,7,7,90,24
+    COMBOBOX        IDC_STATE,13,15,80,64,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "Face",IDC_STATIC,7,32,90,27
+    COMBOBOX        IDC_FACE,13,42,78,78,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_BUTTON DIALOG DISCARDABLE  0, 0, 246, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Button"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "OK",IDC_OK,82,77,50,14
+    GROUPBOX        "State",IDC_STATIC,7,7,90,24
+    GROUPBOX        "Obstacle ID Pointed at",IDC_STATIC,100,7,139,29
+    LTEXT           "",IDC_ID,38,53,19,11,SS_SUNKEN
+    GROUPBOX        "ID #",IDC_STATIC,34,43,28,25
+    PUSHBUTTON      "",IDC_BUTTONFOLLOW,103,17,25,11,BS_LEFT
+    COMBOBOX        IDC_STATE,13,15,80,64,CBS_DROPDOWNLIST | WS_DISABLED | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_OBSTACLEBOX,130,17,101,81,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Position",IDC_STATIC,149,39,90,33
+    LTEXT           "X",IDC_STATIC,171,61,8,8
+    LTEXT           "Y",IDC_STATIC,211,61,8,8
+    EDITTEXT        IDC_X,153,48,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_Y,193,48,40,12,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+IDD_CRANE DIALOG DISCARDABLE  0, 0, 214, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Crane"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "OK",IDC_OK,82,77,50,14
+    GROUPBOX        "Position",IDC_STATIC,117,42,90,33
+    LTEXT           "X",IDC_STATIC,138,65,8,8
+    LTEXT           "Y",IDC_STATIC,178,65,8,8
+    GROUPBOX        "Drop Pos (In Tiles)",IDC_STATIC,117,7,90,33
+    LTEXT           "X",IDC_STATIC,139,31,8,8
+    LTEXT           "Y",IDC_STATIC,179,30,8,8
+    EDITTEXT        IDC_DROPX,120,17,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_DROPY,161,17,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_X,119,51,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_Y,161,51,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "State",IDC_STATIC,7,7,90,24
+    COMBOBOX        IDC_STATE,13,15,80,64,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "",IDC_ID,38,53,19,11,SS_SUNKEN
+    GROUPBOX        "ID #",IDC_STATIC,34,43,28,25
+END
+
+IDD_MULTIOBS DIALOG DISCARDABLE  0, 0, 249, 154
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Multi-Obs"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "OK",IDC_OK,82,133,50,14
+    GROUPBOX        "Obstacle ID Pointed at #1",IDC_STATIC,107,6,135,29
+    LTEXT           "",IDC_ID,39,79,19,11,SS_SUNKEN
+    GROUPBOX        "ID #",IDC_STATIC,35,69,28,25
+    GROUPBOX        "Number of Obstacles",IDC_STATIC,7,6,90,25
+    GROUPBOX        "Position",IDC_STATIC,111,97,90,33
+    LTEXT           "X",IDC_STATIC,133,119,8,8
+    LTEXT           "Y",IDC_STATIC,173,119,8,8
+    EDITTEXT        IDC_X,115,106,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_Y,155,106,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    COMBOBOX        IDC_NUMOBS,13,15,80,78,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "",IDC_MULTIFOLLOW1,111,17,25,11,BS_LEFT
+    COMBOBOX        IDC_OBSTACLEBOX1,137,17,101,81,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Obstacle ID Pointed at #2",IDC_STATIC,107,37,135,29
+    PUSHBUTTON      "",IDC_MULTIFOLLOW2,111,48,25,11,BS_LEFT
+    COMBOBOX        IDC_OBSTACLEBOX2,137,48,101,81,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Obstacle ID Pointed at #3",IDC_STATIC,107,68,135,29
+    PUSHBUTTON      "",IDC_MULTIFOLLOW3,111,79,25,11,BS_LEFT | WS_DISABLED
+    COMBOBOX        IDC_OBSTACLEBOX3,137,79,101,81,CBS_DROPDOWNLIST | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_TIMER DIALOG DISCARDABLE  0, 0, 248, 103
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Timer"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "OK",IDC_OK,81,83,50,14
+    GROUPBOX        "Offset",IDC_STATIC,7,35,90,27
+    LTEXT           "",IDC_ID,39,76,19,11,SS_SUNKEN
+    GROUPBOX        "ID #",IDC_STATIC,35,66,28,25
+    GROUPBOX        "Delay",IDC_STATIC,7,7,90,27
+    EDITTEXT        IDC_DELAY,13,17,79,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_FACE,13,46,79,12,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "Position",IDC_STATIC,151,39,90,33
+    LTEXT           "X",IDC_STATIC,176,61,8,8
+    LTEXT           "Y",IDC_STATIC,216,61,8,8
+    EDITTEXT        IDC_X,158,48,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_Y,198,48,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "Obstacle ID Pointed at",IDC_STATIC,102,7,139,29
+    PUSHBUTTON      "",IDC_TIMERFOLLOW,109,17,25,11,BS_LEFT
+    COMBOBOX        IDC_OBSTACLEBOX,135,17,101,81,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_IMAGE DIALOG DISCARDABLE  0, 0, 178, 186
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Image"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDC_OK,17,165,50,14
+    GROUPBOX        "FileSize",IDC_STATIC,7,8,77,23
+    LTEXT           "",IDC_FILESIZE,13,17,66,10,SS_SUNKEN
+    GROUPBOX        "Width (Pixels)",IDC_STATIC,7,58,77,23
+    LTEXT           "",IDC_WIDTHPIXELS,13,67,66,10,SS_SUNKEN
+    GROUPBOX        "Height (Pixels)",IDC_STATIC,90,58,77,23
+    LTEXT           "",IDC_HEIGHTPIXELS,95,67,66,10,SS_SUNKEN
+    GROUPBOX        "Number of Tiles",IDC_STATIC,90,8,77,23
+    LTEXT           "",IDC_NUMTILES,96,17,66,10,SS_SUNKEN
+    GROUPBOX        "Notes",IDC_STATIC,7,82,164,79
+    LTEXT           "",IDC_NOTES,11,92,154,64,SS_SUNKEN
+    RADIOBUTTON     "Bytes",IDC_BYTES,27,34,33,10
+    RADIOBUTTON     "Kilobytes",IDC_KILOBYTES,27,44,44,10
+    PUSHBUTTON      "Preview",IDC_PREVIEW,108,165,50,14
+END
+
+IDD_BMPPREVIEW DIALOG DISCARDABLE  0, 0, 104, 47
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "BMP Viewer"
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_ABOUT DIALOG DISCARDABLE  0, 0, 255, 207
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "About",IDC_STATIC,7,7,241,173
+    PUSHBUTTON      "OK",IDC_OK,99,186,50,14
+    CTEXT           "Escape From the Funky Factory (EFFF)\nLevel Viewer\nProgrammed by Jeff Verkoeyen\n\nThis program was developed to aid in the construction and debug process of developing EFFF levels.",
+                    IDC_STATIC,13,16,229,50
+    CTEXT           "With this Viewer, I hope that you will be able to make sure that everything is in order in your level, before you even need to run it through the engine!",
+                    IDC_STATIC,13,68,228,25
+    CTEXT           "If you have any questions/comments/suggestions, feel free to email me, or check out The Developer's Alliance's site.\n\nEmail:  bloodright@msn.com\nWebsite: http://www.TheDevelopersAlliance.com/",
+                    IDC_STATIC,13,135,229,41
+    CTEXT           "Now, v2.0 includes the ability to modify virtually every single aspect of the EFFF level.  With 2.0, you can create new levels, add obstacles, delete them, and change anything else you want, just like the level editor!",
+                    IDC_STATIC,14,98,228,33
+END
+
+IDD_ADD DIALOG DISCARDABLE  0, 0, 125, 133
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Add new obstacle"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "OK",IDC_OK,38,112,50,14
+    GROUPBOX        "Type",IDC_STATIC,7,7,111,26
+    COMBOBOX        IDC_TYPE,13,16,101,94,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "Position",IDC_STATIC,17,39,90,33
+    LTEXT           "X",IDC_STATIC,39,61,8,8
+    LTEXT           "Y",IDC_STATIC,79,61,8,8
+    EDITTEXT        IDC_X,21,48,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_Y,61,48,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "",IDC_ID,53,88,19,11,SS_SUNKEN
+    GROUPBOX        "ID #",IDC_STATIC,49,78,28,25
+END
+
+IDD_CHANGEFINAL DIALOG DISCARDABLE  0, 0, 120, 49
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Change Finalization"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_FINALTYPES,7,7,106,78,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "OK",IDC_OK,35,28,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ANALYZE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 272
+    END
+
+    IDD_DEFAULT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 207
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_LASER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 207
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_BUTTON, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 239
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_CRANE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 207
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_MULTIOBS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 242
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_TIMER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 241
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 96
+    END
+
+    IDD_IMAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 171
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 179
+    END
+
+    IDD_BMPPREVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 97
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 40
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_ADD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 118
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 126
+    END
+
+    IDD_CHANGEFINAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 113
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_LOGO                ICON    DISCARDABLE     "icon1.ico"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
